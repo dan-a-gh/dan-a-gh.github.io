@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Allison - Software Developer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #4a4a4a;
+            color: #fff;
+            text-align: center;
+            padding: 0.1rem;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        
+        .download-button:hover {
+            background-color: #45a049;
+        }
+        .project {
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Daniel Allison</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm a passionate software developer with 5 years of experience in building web applications. I love solving complex problems and creating efficient, scalable solutions.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>JavaScript (React, Node.js)</li>
+                <li>Rust (actix-web)</li>
+                <li>SQL (MySQL, PostgreSQL)</li>
+                <li>Infrastructure-as-Code (Terraform)</li>
+                <li>Linux (Red Hat Enterprise Linux, Docker containers, Ansible, Kubernetes)</li>
+                <li>Shell scripts (PowerShell, bash)</li>
+                <li>HTML5 & CSS3</li>
+                <li>Git & GitHub</li>
+                <li>Figma</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Industrial-Internet-of-Things Edge Computing Human Machine Interface App</h3>
+                <p>Developed an IIoT application on an edge computing device using full stack technologies including React.js, Typescript, Rust, actix-web, Docker containers, and Postgresql</p>
+            </div>
+            <div class="project">
+                <h3>Mobile Card Game</h3>
+                <p>Built a cross platform mobile game using HTML, JS (phaser game engine) (Capacitor.js)</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email:  <span id="email"></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/-daniel-allison-">linkedin.com/in/-daniel-allison-</a></p>
+            <p>GitHub: <a href="https://github.com/johndoe">github.com/dan-a-gh</a></p>
+            <a href="" download class="download-button">Download Resume</a>
+        </section>
+    </div>
+    <script>
+        // Email obfuscation
+        function displayEmail() {
+            var user = 'contact';
+            var domain = 'danielallison.dev';
+            var emailElement = document.getElementById('email');
+            emailElement.innerHTML = '<a href="mailto:' + user + '@' + domain + '">' + user + '@' + domain + '</a>';
+        }
+        // Call the function after a short delay
+        setTimeout(displayEmail, 1000);
+    </script>
+</body>
+</html>
